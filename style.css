@@ -1,0 +1,255 @@
+/* Home */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: black;
+    background-image: url(./assents/Ativo2.png);
+}
+
+.nav-class {
+    display: flex;
+    height: 200px;
+    width: auto;
+    margin: 25px auto auto 30px;
+    color: #f8f2f2;
+
+}
+
+
+.h2-class {
+    display: block;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 32px;
+    margin: 40px auto auto 55px;
+    color: #f8f2f2;
+}
+
+.div-links {
+    display: block;
+    margin-right: 450px;
+    margin-top: 23px;
+    width: auto;
+
+}
+
+
+a {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 24px;
+    margin-left: 25px;
+    color: #f8f2f2;
+}
+
+a:hover {
+    opacity: 0.8;
+
+}
+
+a:active {
+    opacity: 0.6;
+
+}
+
+.img-main {
+    width: 480px;
+    height: 480px;
+    margin-right: 25px;
+    border-radius: 5px;
+}
+
+.div-text,
+h1 {
+    display: inline-block;
+    margin-top: 80px;
+    margin-bottom: 25px;
+    line-height: 24px;
+    font-size: 35px;
+    font-weight: 900;
+    width: 450px;
+    word-break: break-word;
+    line-height: 45px;
+}
+
+.header-class {
+    color: #f8f2f2;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+
+/* Section 1 */
+
+.section1 {
+    background-color: #f8f2f2;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding: 35px;
+    margin-top: 240px;
+    height: 500px;
+
+}
+
+h3 {
+    display: block;
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.p-about {
+    width: 800px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Section 2 */
+
+.section2 {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 240px;
+    margin-bottom: 100px;
+}
+
+.div-services {
+    background-color: #f8f2f2;
+    display: block;
+    margin: 0 auto;
+    width: 400px;
+    height: 450px;
+    border-radius: 5px;
+}
+
+.quite {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.h3-section2 {
+
+    padding-top: 25px;
+    margin-bottom: 25px;
+    color: #f8f2f2;
+    background-color: #12151A;
+
+    height: 70px;
+    border-radius: 5px;
+    font-size: 24px;
+    line-height: 24px;
+}
+
+.p-services {
+    margin: 50px;
+    line-height: 25px;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+/* Button top */
+
+.button-top {
+    background-color: #12151A;
+    color: #e9eef6;
+
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+
+    padding: 15px;
+    clip-path: circle();
+
+    font-size: 1.5rem;
+    line-height: 0;
+
+    visibility: hidden;
+    opacity: 0;
+
+    transition: 0.3s;
+    transform: translateY(100%);
+}
+
+.button-top.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Footer-contact */
+
+footer {
+    background-color: #e9eef6;
+    height: 200px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer .logo {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 35px;
+    text-align: start;
+}
+
+.div-footer-text {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    width: 300px;
+}
+
+
+footer a {
+    color: #12151A;
+}
+
+footer p {
+    padding: 5px;
+}
+
+.img-insta {
+    height: 30px;
+    width: 30px;
+    margin-bottom: 15px;
+}
+
+.img-whats {
+    height: 30px;
+    width: 30px;
+}
+
+.img-email {
+    height: 30px;
+    width: 30px;
+}
+
+footer .medias {
+    display: flex;
+    width: 200px;
+    height: 20px;
+    
+}
+
+footer .medias a {
+    transition: 0.3s;
+    display: inline-block;
+}
+
+footer .medias a:hover {
+    transform: translateY(-10px);
+}
