@@ -8,16 +8,18 @@
 
 }
 
-body {
+.container {
+    
     background-color: black;
     background-image: url(./assents/Ativo2.png);
+
 }
 
 .nav-class {
     display: flex;
     height: 200px;
     width: auto;
-    margin: 25px auto auto 30px;
+    margin: 25px auto auto 25px;
     color: #f8f2f2;
 
 }
@@ -39,7 +41,6 @@ body {
     width: auto;
 
 }
-
 
 a {
     cursor: pointer;
@@ -64,7 +65,7 @@ a:active {
     width: 480px;
     height: 480px;
     margin-right: 25px;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .div-text,
@@ -91,14 +92,14 @@ h1 {
 
 .section1 {
     background-color: #f8f2f2;
-    display: flex;
+    display: block;
     align-items: center;
     text-align: center;
-    justify-content: space-around;
+    margin: 0 auto;
     padding: 35px;
     margin-top: 240px;
     height: 500px;
-
+    width: 100vw;
 }
 
 h3 {
@@ -109,9 +110,13 @@ h3 {
 
 .p-about {
     width: 800px;
+    display: inline-flex;
     margin-bottom: 25px;
     font-size: 20px;
     line-height: 24px;
+    align-items: center;
+    text-align: center;
+
 }
 
 /* Section 2 */
@@ -166,10 +171,10 @@ h3 {
     color: #e9eef6;
 
     position: fixed;
-    right: 1rem;
-    bottom: 1rem;
+    right: 1.5rem;
+    bottom: 1.5rem;
 
-    padding: 15px;
+    padding: 20px;
     clip-path: circle();
 
     font-size: 1.5rem;
@@ -209,7 +214,6 @@ footer .logo {
 .div-footer-text {
     display: flex;
     flex-direction: column;
-    text-align: start;
     width: 300px;
 }
 
@@ -241,8 +245,6 @@ footer p {
 footer .medias {
     display: flex;
     width: 200px;
-    height: 20px;
-    
 }
 
 footer .medias a {
@@ -252,4 +254,74 @@ footer .medias a {
 
 footer .medias a:hover {
     transform: translateY(-10px);
+}
+
+/* Media Query */
+
+@media (max-width:1200px) {
+
+    .div-text {
+        margin-left: 0;
+        margin-left: 0;
+        display: none;
+        visibility: hidden;
+    }
+
+    .div-links {
+        display: none;
+        visibility: 0;
+    }
+
+    .header-class h1 {
+        display: none;
+        visibility: 0;
+    }
+
+    .img-main {
+        width: 300px;
+        height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .p-about {
+        width: 300px;
+        height: auto;
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .section1 {
+        /* width: auto; */
+        height: auto;
+        margin-top: 140px;
+        padding: 20px;
+    }
+
+    .section2 {
+        display: flex;
+        flex-direction: column;
+        margin-top: 110px;
+    }
+
+    .section2 .div-services {
+        width: 300px;
+        height: 400px;
+    }
+
+    .quite {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .class-footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .button-top.show {
+        margin-left: 15px;
+    }
+
 }
